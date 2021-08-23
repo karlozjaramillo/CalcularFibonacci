@@ -17,6 +17,6 @@ public class CalcularFibonacci {
     public static void main(String[] args) {
         Fibonacci fibonacci = new Fibonacci(10);
         fibonacci.mostrarSerie();
+        fibonacci.imprimirPrimo();
     }
-    
 }

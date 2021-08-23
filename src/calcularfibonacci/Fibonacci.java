@@ -40,7 +40,7 @@ public class Fibonacci {
     }
 
 //    Método para obtener el número Fibonacci usando recursividad.
-    public int obtenerFibonacci(int n) {
+    private int obtenerFibonacci(int n) {
         switch (n) {
             case 0:
                 return 0;
@@ -59,5 +59,27 @@ public class Fibonacci {
             resultante = obtenerFibonacci(i);
         }
         System.out.println();
+    }
+
+//    Método para validar si un número es primo.
+    private boolean esPrimo(int numero) {
+        int contador = 2;
+        boolean primo = true;
+        while ((primo) && (contador != numero)) {
+            if (numero % contador == 0) {
+                primo = false;
+            }
+            contador++;
+        }
+        return primo;
+    }
+
+//    Método para imprimir si un número es primo o no.
+    public void imprimirPrimo() {
+        if (esPrimo(resultante)) {
+            System.out.println(resultante + " es primo");
+        } else {
+            System.out.println(resultante + " no es primo");
+        }
     }
 }
