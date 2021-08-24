@@ -1,28 +1,40 @@
 /*
  * Clase con los atributos necesarios para calcular un número Fibonacci,
- * mostrar la serie y el número resultante.
+ * mostrar la serie y el número resultante, y validar si el número resultante
+ * es primo o no.
  */
 package calcularfibonacci;
 
 /**
  *
- * @author Carlos Jaramillo.
+ * @author Carlos Jaramillo
+ * @version 1.0
+ * @since 23-08-2021
  */
 public class Fibonacci {
 
-//    Atributos.
+    /**
+     * Atributos.
+     */
     private int tamaño;
     private int resultante;
 
-//    Constructores.
+    /**
+     * Constructor vacío.
+     */
     public Fibonacci() {
     }
 
+    /**
+     * Constructor con un parámetro.
+     *
+     * @param tamaño
+     */
     public Fibonacci(int tamaño) {
         this.tamaño = tamaño;
     }
 
-//    Getters y Setters.
+    // Getters y Setters.    
     public int getResultante() {
         return resultante;
     }
@@ -39,7 +51,12 @@ public class Fibonacci {
         this.tamaño = tamaño;
     }
 
-//    Método para obtener el número Fibonacci usando recursividad.
+    /**
+     * Método para obtener el número Fibonacci usando recursividad.
+     *
+     * @param numero de tipo entero.
+     * @return Devuelve el número actual de la serie.
+     */
     private int obtenerFibonacci(int numero) {
         switch (numero) {
             case 0:
@@ -51,8 +68,10 @@ public class Fibonacci {
         }
     }
 
-//    Método para mostrar la serie Fibonacci.
-    public void mostrarSerie() {
+    /**
+     * Método para imprimir la serie Fibonacci.
+     */
+    public void imprimirSerie() {
         System.out.println("=========================");
         System.out.println("La serie de tamaño " + this.tamaño + " es:");
         for (int i = 0; i < tamaño; i++) {
@@ -63,7 +82,12 @@ public class Fibonacci {
         System.out.println("=========================");
     }
 
-//    Método para validar si un número es primo.
+    /**
+     * Método para validar si un número es primo.
+     *
+     * @param número de tipo entero.
+     * @return Devuelve true si el número ingresado es primo.
+     */
     private boolean esPrimo(int numero) {
         int contador = 2;
         boolean primo = true;
@@ -76,7 +100,9 @@ public class Fibonacci {
         return primo;
     }
 
-//    Método para imprimir si un número es primo o no.
+    /**
+     * Método para imprimir si un número es primo o no.
+     */
     public void imprimirPrimo() {
         if (esPrimo(resultante)) {
             System.out.println(resultante + " es primo");

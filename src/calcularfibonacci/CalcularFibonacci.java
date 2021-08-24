@@ -1,13 +1,13 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Clase principal de la aplicación.
  */
 package calcularfibonacci;
 
 /**
  *
  * @author Carlos Jaramillo
+ * @version 1.0
+ * @since 23-08-2021
  */
 public class CalcularFibonacci {
 
@@ -16,7 +16,7 @@ public class CalcularFibonacci {
      */
     public static void main(String[] args) {
         Fibonacci fibonacci = new Fibonacci(10);
-        fibonacci.mostrarSerie();
+        fibonacci.imprimirSerie();
         fibonacci.imprimirPrimo();
     }
 }
