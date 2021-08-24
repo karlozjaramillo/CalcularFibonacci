@@ -53,12 +53,14 @@ public class Fibonacci {
 
 //    Método para mostrar la serie Fibonacci.
     public void mostrarSerie() {
+        System.out.println("=========================");
         System.out.println("La serie de tamaño " + this.tamaño + " es:");
         for (int i = 0; i < tamaño; i++) {
             System.out.print(obtenerFibonacci(i) + " ");
             resultante = obtenerFibonacci(i);
         }
         System.out.println();
+        System.out.println("=========================");
     }
 
 //    Método para validar si un número es primo.
