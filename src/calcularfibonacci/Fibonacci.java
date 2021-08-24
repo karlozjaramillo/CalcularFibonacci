@@ -40,14 +40,14 @@ public class Fibonacci {
     }
 
 //    Método para obtener el número Fibonacci usando recursividad.
-    private int obtenerFibonacci(int n) {
-        switch (n) {
+    private int obtenerFibonacci(int numero) {
+        switch (numero) {
             case 0:
                 return 0;
             case 1:
                 return 1;
             default:
-                return obtenerFibonacci(n - 1) + obtenerFibonacci(n - 2);
+                return obtenerFibonacci(numero - 1) + obtenerFibonacci(numero - 2);
         }
     }
 
