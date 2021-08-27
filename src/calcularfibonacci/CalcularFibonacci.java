@@ -15,8 +15,8 @@ public class CalcularFibonacci {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Fibonacci fibonacci = new Fibonacci(10);
-        fibonacci.imprimirSerie();
-        fibonacci.imprimirPrimo();
+        Fibonacci fibonacci = new Fibonacci(7);
+        fibonacci.printSerie();
+        fibonacci.printPrime();
     }
 }
